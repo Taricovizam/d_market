@@ -1,0 +1,86 @@
+@import "./reset";
+
+
+.header{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: map-get($color, primary); 
+    top: 0;
+    position: sticky;
+    z-index: 100;
+
+    &__logo{
+        width: 100px;
+        margin: 0 1.5em;
+        object-fit: contain;   
+    }
+    &__search{
+        display: flex;
+        align-items: center;
+        flex: 1;
+        border-radius: 25px;
+
+        &__input{
+            width: 100%;
+            border: none;
+            padding: .3em;
+            height: 1.5em;
+        }
+        &__icon{
+            padding: .1em;
+            background-color: map-get($color, secondary );
+            color: #fff;
+            
+        }
+
+    }
+    &__nav{
+        display: flex;
+        // align-items: center;
+        justify-content: space-evenly;
+    &__option{
+        // color: #fff;
+        display: flex;
+        flex-direction: column;
+        margin: 0 .8em;
+
+        .option__lineOne{
+            font-size: .6rem;
+            line-height: .6;
+        }
+    }
+
+    }
+    
+    &__basket{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin-right: .5em;
+
+        &__icon{
+            font-size: 1.7em !important;
+        }
+        &__count{
+            padding: .02em;
+            margin-top: .7em;
+            border-radius: 30px;
+            position: absolute;
+            background-color: #000;
+            color: #fff;
+            z-index: 2;
+            font-size: .5rem;
+
+        }
+    }
+}
+
+
+
+
+.option__lineTwo{
+    font-size: rem;
+    font-weight: map-get($fontWeight, bold );
+}
